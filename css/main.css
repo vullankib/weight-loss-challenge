@@ -1,0 +1,70 @@
+/* general */
+
+body {
+    font: 300 20px/1.6 'Roboto', sans-serif;
+    }
+    
+    .container {
+    max-width: 70%;
+    padding: 0 5px;
+    margin: 0 auto;
+    }
+    
+    h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 40px 0 20px;
+    text-transform: uppercase;
+    }
+    
+    /* flight status */
+    .flightStatus {
+    text-align: center;
+    width: 100%;
+    background: #f9f9f9;
+    }
+    
+    table {
+    display: table;
+    width: 100%;
+    }
+    
+    th {
+    text-transform: uppercase;
+    background: #e4e4e4;
+    font-weight: 500;
+    font-size: 18px;
+    }
+    
+    th,
+    td {
+    padding: 5px;
+    text-align: left;
+    vertical-align: middle;
+    border-left: 1px solid #ddd;
+    }
+    
+    td {
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+    }
+    
+    .status {
+    background: #e74c3c;
+    color: #fff;
+    }
+    
+    .status.neutral {
+        background: #2ecc71;
+    }
+    
+    /* .status.neutral {
+    background: #f39c12;
+    } */
+    
+    .status.gained {
+    background: #2ecc71;
+    }
+
+      
