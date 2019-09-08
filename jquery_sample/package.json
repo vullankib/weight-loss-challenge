@@ -2,7 +2,7 @@
   "name": "jquery_sample",
   "version": "1.0.0",
   "description": "jquery sample for creating tables",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/vullankib/jquery_table#readme",
   "dependencies": {
-    "datatables.net": "^1.10.19"
+    "bootstrap3": "^3.3.5",
+    "datatables.net": "^1.10.19",
+    "datatables.net-dt": "^1.10.19"
   }
 }
