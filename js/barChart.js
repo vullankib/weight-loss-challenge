@@ -4,7 +4,7 @@ $(function(){
 
                 {
                     "title": "Total",
-                    "sortable":false,
+                    "sortable":true,
                     "render": function(data, type, row, meta){
                         return $("<div></div>", {
                             "class": "bar-chart-bar"

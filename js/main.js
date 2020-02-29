@@ -37,5 +37,5 @@ xhr.onreadystatechange = function() {
     document.querySelector('.flightStatus tbody').innerHTML = statusHTML;
  }
 } 
-xhr.open('GET', 'data/flight.json'); // using GET method, we get data from flight.json
+xhr.open('GET', 'data/weight.json'); // using GET method, we get data from weight.json
 xhr.send();
