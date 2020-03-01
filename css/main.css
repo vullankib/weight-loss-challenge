@@ -70,21 +70,3 @@ body {
     .table-sortable th {
         cursor: pointer;
       }
-/*       
-      .table-sortable .th-sort-asc::after {
-        content: "\25b4";
-      }
-      
-      .table-sortable .th-sort-desc::after {
-        content: "\25be";
-      }
-      
-      .table-sortable .th-sort-asc::after,
-      .table-sortable .th-sort-desc::after {
-        margin-left: 5px;
-      }
-      
-      .table-sortable .th-sort-asc,
-      .table-sortable .th-sort-desc {
-        background: rgba(15, 126, 24, 0.44);
-      } */
