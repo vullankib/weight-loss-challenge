@@ -19,7 +19,7 @@ body {
     }
     
     /* flight status */
-    .flightStatus {
+    .weightStatus {
     text-align: center;
     width: 100%;
     background: #f9f9f9;
@@ -35,9 +35,9 @@ body {
     background: #e4e4e4;
     font-weight: 500;
     font-size: 18px;
+    padding: 5px;
     }
     
-    th,
     td {
     padding: 5px;
     text-align: left;
@@ -67,4 +67,24 @@ body {
     background: #2ecc71;
     }
 
+    .table-sortable th {
+        cursor: pointer;
+      }
       
+      .table-sortable .th-sort-asc::after {
+        content: "\25b4";
+      }
+      
+      .table-sortable .th-sort-desc::after {
+        content: "\25be";
+      }
+      
+      .table-sortable .th-sort-asc::after,
+      .table-sortable .th-sort-desc::after {
+        margin-left: 5px;
+      }
+      
+      .table-sortable .th-sort-asc,
+      .table-sortable .th-sort-desc {
+        background: rgba(15, 126, 24, 0.44);
+      }
