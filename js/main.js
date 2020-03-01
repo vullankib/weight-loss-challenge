@@ -29,7 +29,7 @@ function fillTable(obj){
     statusHTML += ' <th>'+"Total"+'</th>'+'</tr>';
     for(var i = 0; i < numUsers; i++) {
       statusHTML += '<tr>';
-      statusHTML += '<td>' + obj[i].user + '</td>';
+      statusHTML += '<td class="light">' + obj[i].user + '</td>';
       for(var j = 0; j < numWeeks; j++) {
             pc = obj[i].weeklyPercentageChange[j]; //percentage change value stored in pc
             
