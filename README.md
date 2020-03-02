@@ -3,6 +3,8 @@ Weight Loss Challenge App which can be used within a team or Organization to tra
 
 This code in the repo doesn't use any libraries. Sorting and click event listeners to capture the column headers, have been written from scratch.
 
+![github-img](https://user-images.githubusercontent.com/19988462/75722555-095f8880-5ca0-11ea-9fe5-5dea34ab0b4a.jpg)
+
 ## JSON File Format
 Each week percentage change is appeneded at the end 
 ```json
