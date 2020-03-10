@@ -17,7 +17,7 @@ function fillTable(obj){
     var numUsers = obj.length;
     statusHTML += '<tr>';
     // Header of Table
-    for(var i = 0; i < (numWeeks+1); i++) {
+    for(var i = 0; i < numWeeks; i++) {
       if (i==0){
         statusHTML += '<th>'  + '</th>';
       } 
@@ -25,12 +25,11 @@ function fillTable(obj){
         statusHTML += '<th>' + "Week " + i + '</th>';
       }    
     }
-    
     statusHTML += ' <th>'+"Total"+'</th>'+'</tr>';
     for(var i = 0; i < numUsers; i++) {
       statusHTML += '<tr>';
       statusHTML += '<td class="light">' + obj[i].user + '</td>';
-      for(var j = 0; j < numWeeks; j++) {
+      for(var j = 0; j < numWeeks-1; j++) {
             pc = obj[i].weeklyPercentageChange[j]; //percentage change value stored in pc
             
             if(pc < 0) {
@@ -41,6 +40,15 @@ function fillTable(obj){
               statusHTML += '<td class="status">' + pc + '</td>';
             }
       }
+            pc = obj[i].weeklyPercentageChange[j]; //percentage change value stored in pc
+            
+            if(pc < 0) {
+              statusHTML += '<td class="status gained">' + pc + '</td>';
+            } else if(pc == 0) {
+              statusHTML += '<td class="status neutral">' + pc + '</td>';
+            } else{
+              statusHTML += '<td class="status">' + pc + '</td>';
+            }
       statusHTML += '</tr>';
     }
     document.querySelector('.weightStatus tbody').innerHTML = statusHTML;
